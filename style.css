@@ -1,0 +1,154 @@
+html {
+    background-color: #1b1b1f;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    color: #dfdfdf;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.75;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar > * {
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ACC1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00838F;
+}
+
+::-moz-selection {
+    background: #0097A7;
+}
+
+::selection {
+    background: #0097A7;
+    color: #dfdfdf;
+}
+
+h1 {
+    font-family: monospace;
+    color: #00ACC1;
+}
+
+h2 {
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+a h2, b {
+    color: #dfdfdf;
+    text-decoration: underline;
+    text-decoration-color: #00ACC1;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 0.2em;
+    transition: 0.15s ease;
+}
+
+a h2:hover, b:hover {
+    color: #00ACC1;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-wrapper {
+    margin: 0 2rem 2rem 0;
+}
+
+.project-wrapper p {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 400px;
+    width: 16rem;
+    transition: 0.2s ease;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: -6px 6px 0px #0097A7;
+    transform: translateX(6px);
+    transition: .2s ease;
+
+}
+
+.card h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .projects-container {
+        width: inherit;
+    }
+    .project-wrapper {
+        margin-right: 0;
+    }
+    .card {
+        width: 100%;
+    }
+}
